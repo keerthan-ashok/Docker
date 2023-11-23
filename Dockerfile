@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y openjdk-11-jdk && apt-get install -y wg
 
 WORKDIR /apache-tomcat-9.0.50
 
-COPY /home/keerthan/tomcat/tomcat1/webapps/Amazon.war apache-tomcat-9.0.50/webapps/
+COPY /home/keerthan/tomcat/tomcat1/webapps/Amazon.war /var/lib/jenkins/workspace/docker-task/apache-tomcat-9.0.50/webapps/
 
 EXPOSE 8080
 
